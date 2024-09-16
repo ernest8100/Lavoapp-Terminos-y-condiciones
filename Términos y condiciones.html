@@ -98,15 +98,13 @@
     </div>
         
     <div class="acceptance">
-        <p>Al hacer clic en "Acepto", usted reconoce que ha leído, entendido y está de acuerdo con estos términos y condiciones y nuestras políticas de privacidad.</p>
-        <button id="acceptBtn">Acepto</button>
+        <p>Al hacer clic en "Volver", usted regresará a la página anterior.</p>
+        <button id="backBtn">Volver</button>
     </div>
-
+    
     <script>
-        document.getElementById('acceptBtn').addEventListener('click', function() {
-            alert('Gracias por aceptar nuestros Términos y Condiciones. ¡Bienvenido a nuestra aplicación web!');
-            // Aquí puedes agregar código para registrar la aceptación del usuario o redirigirlo a la página principal
-            window.location.href = '/inicio';
+        document.getElementById('backBtn').addEventListener('click', function() {
+            history.back();
         });
     </script>
-</body></html>
+    </body></html>    
